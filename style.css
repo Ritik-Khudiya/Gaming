@@ -1,0 +1,111 @@
+
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+ }
+ body{
+    background-image: url("gamePhotos/1.jpg") ;
+    background-repeat:repeat-x;  
+ }
+ .navbar{
+    width: 100vw;
+    display: flex;
+    justify-content: center;   
+ }
+
+ .logo{
+    width: 24vw;
+    height: 19vw;
+ }
+ .logo img{
+    width: 100%;
+    height: 100%;
+
+ }
+ .games{
+    display: flex;
+    width: 60vw;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 100px;
+    flex-wrap: wrap;
+ }
+.newgames{
+    width: 30%;
+    height: 12vw;
+  
+    display: flex;
+    flex-direction: column;
+}
+.newgames img{
+    width: 100%;
+    height: 12vw;
+    border-radius: 15px;
+}
+.newgames img:hover{
+    transform: scale(1.2);
+    margin-bottom: 17px;
+    cursor: pointer;
+}
+.play{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.play button{
+    height: 2vw;
+    width: 5vw;
+    border-radius: 10px;
+    margin-top: 5px;
+    background-color: darkgray;
+    font-size: 1.3vw;
+}
+.play button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    background-color: rgb(85, 85, 236);
+}
+@media only screen and (max-width:1000px)
+{
+    .games{
+        width: 85vw;
+    }
+    .newgames{
+        width: 45%;
+    }
+    .newgames img{
+        transition: all 0.2s ease-in;
+        height: 30vw;
+    }
+    .play button{
+        height: 4vw;
+        width: 9vw;
+        border-radius: 10px;
+        margin-top: 5px;
+        background-color: darkgray;
+        font-size: 3vw;
+    }
+    
+}
+@media only screen and (max-width:600px)
+{
+    .games{
+        flex-direction: column;
+        align-items: center;
+        height: 75vw;
+     }
+
+    .logo {
+        width: 37vw;
+        height: 28vw;
+    } 
+    .play button{
+        height: 7vw;
+        width: 12vw;
+        margin-top: 5px;
+
+        font-size: 4vw;
+    }
+}
